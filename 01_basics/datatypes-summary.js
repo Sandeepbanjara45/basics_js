@@ -10,13 +10,13 @@ BigInt
 Boolean
 Undefined
 
-
+*/
 const Id = Symbol('123');
 const anotherId = Symbol('123')
-console.log(Id === anotherId);
+console.log(Id === anotherId);//both value are different false
 const nullvalue = null;
 
-//Reference (non-primitive)
+//Reference Type (non-primitive)
 //Array,Object,Function
 const arr = ["sam","ram","singh"];
 let myObj = {
@@ -26,12 +26,12 @@ let myObj = {
 let myFunc = function(){
     return console.log("hello");
 }
-console.log(typeof Id);
-console.log(typeof nullvalue);
-console.log(typeof arr);
-console.log(typeof myObj);
-console.log(typeof myFunc);
-*/
+//  console.log(typeof Id);//symbol
+// console.log(typeof nullvalue);//object
+// console.log(typeof arr);//object
+// console.log(typeof myObj);//object
+// console.log(typeof myFunc);//function object
+
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //Stack memory (primitive) all value copy and Heap memory all value ka reference pass hota h(non-primitive)

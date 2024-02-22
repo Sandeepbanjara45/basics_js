@@ -42,12 +42,13 @@ let str2 = " rathor";
 let str3 = str1+str2;
 // console.log(str3);
 // console.log("1" + 2 + 2);
-// console.log(1 + 2 + "2");
+// console.log(1 + 2 + "2");//32
 //  console.log(+true);
 //  console.log(+"");
 
  let gameCounter = 100;
- ++gameCounter;
+ gameCounter++;
+//  ++gameCounter;
  console.log(gameCounter);
 
 

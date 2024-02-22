@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello sandeep</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    //1
+    // setTimeout(()=> {
+    //     console.log("sandeep");
+    // },2000)
+    //2
+    // const saySandeep = () => {
+    //     console.log("sam ");
+    // }
+    // setTimeout(saySandeep,2000)//saysandep is like a  reference
+
+    const changeText = () => {
+        document.querySelector('h1').innerHTML = "Hello Sam"
+    }
+    // setTimeout(changeText,2000)
+
+    const changeMe = setTimeout(changeText,2000)
+
+    document.querySelector('#stop').addEventListener('click', () => {
+        clearTimeout(changeMe)
+        console.log('stopped');
+    })
+    
+
+</script>
+</html>
